@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  justify-content: space-between; /* Menyusun logo dan menu navigasi di ujung yang berbeda */
+  align-items: center; /* Menjaga logo tetap sejajar secara vertikal dengan elemen lain di navbar */
+  background: #333;
+  color: #fff;
+  padding: 20px 100px;
+}
+
+header .logo img {
+  max-height: 70px; /* Sesuaikan dengan tinggi yang diinginkan */
+  width: auto;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.hero {
+  background: url("img/2.png") no-repeat center center/cover;
+  color: #000000;
+  text-align: center;
+  height: 90vh; /* Set tinggi section menjadi satu halaman penuh */
+  width: 100%; /* Memastikan elemen mengambil 100% dari lebar */
+  display: flex;
+  justify-content: center; /* Mengatur konten berada di tengah secara horizontal */
+  align-items: center; /* Mengatur konten di tengah secara vertikal */
+  flex-direction: column; /* Menyusun elemen dari atas ke bawah */
+  padding: 20px; /* Sedikit padding untuk memberi ruang */
+  margin: 0; /* Hilangkan margin */
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin: 0;
+  padding-bottom: 20px; /* Tambahkan jarak di bawah judul */
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin: 0;
+  padding-bottom: 30px; /* Tambahkan jarak di bawah paragraf */
+}
+
+.cta-button {
+  background: #e74c3c;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.section {
+  padding: 40px 20px;
+}
+.section h2 {
+  text-align: center;
+}
+.section .card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+}
+.section .cta-button {
+  display: block;
+  margin: 0 auto;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.testimonials-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 20px;
+}
+
+.testimonials-container {
+  max-width: 800px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.testimonial {
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+.testimonial:last-of-type {
+  border-bottom: none;
+}
+
+.testimonial-content {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.testimonial-author {
+  font-size: 14px;
+  color: #888;
+}
+
+.testimonial-author strong {
+  color: #333;
+}
+
+#scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+#scroll-to-top:hover {
+  background-color: #0056b3;
+}
